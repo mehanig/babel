@@ -207,7 +207,7 @@ export function ConditionalExpression(node: Object, parent: Object): boolean {
   if (
     t.isUnaryLike(parent) ||
     t.isBinary(parent) ||
-    t.isConditionalExpression(parent, { test: node }) ||
+    t.isConditionalExpression(parent) ||
     t.isAwaitExpression(parent) ||
     t.isTaggedTemplateExpression(parent) ||
     t.isTSTypeAssertion(parent) ||
